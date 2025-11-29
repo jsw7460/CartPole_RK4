@@ -196,7 +196,7 @@ def create_animation(
         cart.set_xy((x - cart_width / 2, -cart_height / 2))
 
         # Update pole
-        pole_x = [x, x + params.L * np.sin(theta)]
+        pole_x = [x, x - params.L * np.sin(theta)]
         pole_y = [0, params.L * np.cos(theta)]
         pole_line.set_data(pole_x, pole_y)
 

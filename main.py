@@ -57,7 +57,7 @@ def main():
     from cartpole_ode.visualization import create_animation
 
     anim = create_animation(result, params, skip_frames=10)
-    anim.save("cartpole.gif", writer="pillow", fps=30)
+    anim.save("cartpole.gif", writer="pillow", fps=60)
     plt.close()
 
     # 나머지 플롯 표시
